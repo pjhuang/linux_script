@@ -155,9 +155,9 @@ scm_url()
 if $scm_only; then
 #	if test ! -e .scmversion; then
 		res=$(scm_version)
-		echo "$res" >.scmversion
+		echo "$res" >"$srctree"/.scmversion
 #	fi
 		repos_url=$(scm_url)
-		echo "$repos_url" > .scmurl
+		echo "$repos_url" > "$srctree"/.scmurl
 	exit
 fi
