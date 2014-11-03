@@ -1,0 +1,12 @@
+Usage: tools/setlocalversion [--save-scmversion] [srctree]
+
+It will generate two files, ".scmurl" and ".scmversion."
+The contents of the files for the example:
+.scmurl:
+http://10.0.0.185/repos/ti335x_apps/trunk
+
+.scmversion
+-svn6
+
+There are also two files, Makefile and scm_info.h for the reference.
+The Makefile is copied from Linux and revised. 
